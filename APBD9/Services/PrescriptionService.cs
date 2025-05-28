@@ -116,6 +116,7 @@ public class PrescriptionService(AppDbContext context) : IPrescriptionService
                 medicaments.Add(new MedicamentGetDto
                 {
                     IdMedicament = prescriptionMedicament.Medicament.IdMedicament,
+                    Name = prescriptionMedicament.Medicament.Name,
                     Dose = prescriptionMedicament.Dose,
                     Description = prescriptionMedicament.Medicament.Description,
                     Details = prescriptionMedicament.Details
